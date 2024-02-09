@@ -48,12 +48,20 @@ cp target/release/libwasmedge_rustls.so  ~/.wasmedge/plugin/
 ### Use `wasmedge_hyper_demo` to test wasmedge_rustls plugin
 
 ```
-git clone https://github.com/WasmEdge/wasmedge_hyper_demo
+$ git clone https://github.com/WasmEdge/wasmedge_hyper_demo
 $ cd client-https/
 $ cargo build --target wasm32-wasi --release
 ```
 
 ![05](05.png)
+
+Execute it.
+
+```
+$ wasmedge target/wasm32-wasi/release/wasmedge_hyper_client_https.wasm
+```
+
+
 ![06](06.png)
 
 
